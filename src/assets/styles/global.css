@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+ 
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('~assets/fonts/poppins/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('~assets/fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('~assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: Almarai;
+  src: url("./assets/fonts/almarai/Almarai-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Almarai;
+  src: url("./assets/fonts/almarai/Almarai-Bold.ttf");
+  font-weight: 700;
+}
+
+#app {
+  position: relative;
+}
+
+/* *** RESET CODE *** */
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #9f762b;
+  --color-primary-light: #ddb43a;
+  --color-primary-dark: #9b7029;
+
+  --color-secondary: #163265;
+  --color-secondary-light: #274e95;
+  --color-secondary-dark: #163265;
+
+  --color-text: #6a6a6d;
+  --color-text-light: #8c8c90;
+  --color-text-dark: #535259;
+
+  --color-bg: #f4f4f5;
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #f4f4f5;
+
+  --color-error: #9f2b2b;
+  --color-warning: #faad14;
+  --color-success: #4e8d12;
+
+  --color-border: #f4f4f5;
+
+  --font-en: Poppins, 'Poppins', Roboto, sans-serif;
+  --font-ar: "Almarai", 'Poppins', sans-serif;
+  --font-bebas: 'Bebas Neue', cursive;
+  --font-base-size: 16px;
+}
+
+.dark {
+  --color-text: #d3d3d3;
+  --color-text-light: #afafaf;
+  --color-text-dark: #fafafa;
+
+  --color-bg: #212121;
+  --color-bg-light: #0c0c0c;
+  --color-bg-dark: #383838;
+
+  --color-border: #46484a;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+ 
+
+html {
+  scroll-behavior: smooth;
+}
+
+.v-application,
+body,
+html {
+  /*   BASE FONT SIZE */
+ 
+  font-size: var(--font-base-size) !important;
+  font-family: var(--font-en) !important;
+  font-weight: 300 !important;
+  letter-spacing: 0px !important;
+  text-align: start;
+}
+
+html[dir="rtl"],
+[dir="rtl"] body,
+[dir="rtl"] .v-application {
+  font-family: var(--font-ar);
+}
+
+@media only screen and (max-width: 992px) {
+  .v-application,
+  body,
+  html {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .v-application,
+  body,
+  html {
+    font-size: 13px !important;
+  }
+}
+ 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold !important;
+  color: var(--color-text-dark);
+}
+
+
+/* ## PLEASE CHANGE THIS BY USING CUSTUM CLASSES FOR HEADERS  */
+ 
+/* ######################### */
+
+p {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.v-main {
+  padding: 0 !important;
+}
+.container--fluid.container {
+  width: 100% ;
+  max-width: 100% ;
+  padding-inline: 0;
+}
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+html {
+  overflow: auto;
+}
+ 
+.v-menu__content.menuable__content__active {
+  /* margin-top: 30px; */
+}
+@media (min-width: 1264px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+ 
+ 
